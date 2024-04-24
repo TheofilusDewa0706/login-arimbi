@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        DM: ["DM Sans"],
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Login</title>
+</head>
+
+<body
+    class="bg-[url('img/gedung1.jpg')] bg-cover relative bg-center bg-no-repeat min-h-full bg-fixed bg-blend-darken font-DM">
+
+    <div class="bg-black top-0 bottom-0 left-0 right-0 h-full w-full fixed -z-20 opacity-70">
+    </div>
+
+    <section class="m-20">
+        <div class=" bg-white h-[550px] container mx-auto overflow-hidden rounded-xl grid grid-cols-2">
+            <div class="bg-[url('img/gedung2.jpg')] bg-cover bg-center relative flex">
+                <div class="bg-black h-full w-full opacity-70 absolute"> 
+                </div>
+                <div class="text-[32px] font-bold text-white absolute z-10 self-end pb-10 pl-10 ">
+                    Selamat Datang diaplikasi Pengabdian Masyarakat
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-[url('img/college.png')] w-full h-full  absolute bg-cover opacity-25 ">
+                </div>
+                <div class="relative bg-white flex h-[450px] w-[450px] z-30 mx-auto mt-12">
+                    <Form class="h-[450px] w-[500px]">
+                        <div class="pb-5">
+                            <img src="img/logo.png" alt="ukdc" class="size-32 mx-auto ">
+                        </div>
+                        <p class="text-[32px] font-bold text-center pb-5"> 
+                            Login Arimbi
+                        </p>
+                        <div class=" flex flex-col px-10 pb-5">
+                            <label for="" class="pb-2">
+                                Username
+                            </label>
+                            <input type="text" class="border-solid border-2 border-stone-950 rounded-xl pl-2 " placeholder="masukkan username">
+                        </div>
+                        <div class=" flex flex-col px-10 pb-5">
+                            <label for="" class="pb-2">
+                                Password
+                            </label>
+                            <input type="text" class="border-solid border-2 border-stone-950 rounded-xl pl-2"
+                                placeholder="masukkan password">
+                        </div>
+
+                        <div class="ml-[180px]">
+                            <button type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> Masuk </button>
+                        </div>
+                       
+                       
+
+                    </Form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
